@@ -1,25 +1,103 @@
 <section>
-    <article class="container" style="display: flex; justify-content: start; align-items: center;">
-        <div style="flex-direction: column;">
-            <h1>Your awesome<br>traffic permit<br>consultant.</h1>
-        <a href="">GET STARTER<i class='bx bx-last-page'></i></a>
+    <article class="container">
+        <div style="flex-direction: column; height: 600px; display: flex; align-items: start; justify-content: center;">
+            <h1 style="font-family: 'DM Serif Display'; font-style: normal; font-weight: 600; font-size: 7.5rem; line-height: 7rem; color: #ffffff;">Your awesome<br>traffic permit<br>consultant.</h1>
+        <a class="btn mt-5" style="background-color: #ee4d47; color: #ffffff; text-decoration: none; font-weight: 700; font-size: 16px; padding: 10px 25px; border-radius: 5px;" href="/">GET STARTER <img style="width: 30px; padding-left: 10px;" src="/images/top/union.png" alt=""></a>
         </div>
-        <div></div>
     </article>
+</section>
+
+</div>
+</section>
+
+<section>
+    <div style="position: relative; top: -150px; margin-right: 100px;"><img class="img-fluid" src="/images/top/mobel.png" alt=""></div>
 </section>
 
 
 <section>
-    <article class="container" style="display: flex; justify-content: start; align-items: center;">
-        <div>
-            <h3>ABOUT US</h3>
-            <p>The occupational traffic permit is one of the most important things in the company when carrying out freight transport.  In fact, it is a prerequisite for doing business traffic at all. </p>
-            <span>
+    <article class="container" style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+        <div style="max-width: 400px;">
+            <h3 style="color: #ee4d47; font-weight: 600; margin: 60px 0;">ABOUT US</h3>
+            <p style="line-height: 35px;">The occupational traffic permit is one of the most important things in the company when carrying out freight transport.  In fact, it is a prerequisite for doing business traffic at all. </p>
+            <div style="background-color: #FCDDD4; padding: 20px 35px 5px 35px; border-left: 8px solid #ee4d47; font-size: 20px; min-width: 280px; max-width: 480px; font-weight: bold; margin-top: 70px;">
                 <p>How do you do when you need to obtain commercial traffic permit for freight transport to your business?</p>
-            </span>
+            </div>
         </div>    
         <div>
-            <img src="" alt="">
+            <img class="img-fluid mb-5" src="/images/about_us/illustration.png" alt="">
         </div>
     </article>
+</section>
+
+<section>
+    <article class="container" style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+        <div>
+            <img class="img-fluid" src="/images/how_to_apply/illustrations.png" alt="">
+        </div>
+        <div style="margin-right: 50px; ">
+            <h3 style="color: #ee4d47; font-weight: 600;">HOW TO APPLY</h3>
+            <p style="max-width: 420px; min-width: 280px; margin-top: 60px;">When applying for a traffic permit, there are certain requirements that you must meet that are included in the examination: requirements for professional knowledge, solid establishment, good reputation and financial resources. Important to remember is to confirm your application for a traffic permit by the company's company signer or CEO.</p>
+        </div>
+    </article>
+</section>
+
+<section style="width: 100%; position: relative;">
+
+    <div style="background-image: url('/images/FAQ/retangule_9.png'); background-repeat: no-repeat; background-size: cover; width: 75%; height: 900px; z-index: -1; right: 0; position: absolute;">
+    </div>
+
+    <article class="container" style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+        <div style="margin-left: 50px;">
+            <h3 style="color: #ee4d47; font-weight: 600;">HOW TO APPLY</h3>
+            <p style="max-width: 420px; min-width: 280px; margin-top: 60px;">When applying for a traffic permit, there are certain requirements that you must meet that are included in the examination: requirements for professional knowledge, solid establishment, good reputation and financial resources. Important to remember is to confirm your application for a traffic permit by the company's company signer or CEO.</p>
+        </div>
+        <div>
+            <img class="img-fluid" src="/images/how_to_apply/illustrations.png" alt="">
+        </div>
+    </article>
+
+    <article class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-ls-2">
+
+                {{#each faqs}}
+
+                <div class="accordion g-3" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading{{dataValues.id}}">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{dataValues.id}}" aria-expanded="false" aria-controls="flush-collapse{{dataValues.id}}">
+                            Accordion Item #{{id}}
+                        </button>
+                        </h2>
+                        <div id="flush-collapse{{dataValues.id}}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{dataValues.id}}" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                    </div>                
+                </div>
+
+                {{/each}}
+                <div class="accordion g-3" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading{{dataValues.id}}">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{dataValues.id}}" aria-expanded="false" aria-controls="flush-collapse{{dataValues.id}}">
+                            Accordion Item #{{id}}
+                        </button>
+                        </h2>
+                        <div id="flush-collapse{{dataValues.id}}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{dataValues.id}}" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                    </div>                
+                </div>
+                       
+
+            </div>
+            
+    </article>
+
+ 
+    
+
+
+
 </section>
